@@ -10,6 +10,7 @@ var objectiveData = [
 {"name": "End with a Live Animal", "difficulty": 1},
 {"name": "End in Planetarium", "difficulty": 1},
 {"name": "Read Newspaper Clipping", "difficulty": 1},
+{"name": "Draft 2 Knights in a Day", "difficulty": 1},
 
 // ungrouped medium
 {"name": "Spend 3 Gems Drafting a Room", "difficulty": 2},
@@ -22,16 +23,18 @@ var objectiveData = [
 {"name": "Shelter the Lavatory", "difficulty": 2},
 {"name": "Eat in Pantry, Kitchen, and Dining in a Day", "difficulty": 2},
 {"name": "Draft 8 Blue Rooms in a Row", "difficulty": 2},
+{"name": "Draft 2 Bishops in a Day", "difficulty": 2},
 {"name": "Draft 2+ Copies of Room in a Day", "difficulty": 2},
 {"name": "Draft an Architect's House", "difficulty": 2},
 {"name": "Draft West and East Wing Halls", "difficulty": 2},
 {"name": "Change a Room's Color", "difficulty": 2},
 {"name": "Open Tomb Door to Reservoir", "difficulty": 2},
+{"name": "Read a Library Book Aloud", "difficulty": 2},
+{"name": "Buy a Special Key", "difficulty": 2},
 
 // ungrouped hard
+{"name": "Add Mechanarium", "difficulty": 3},
 {"name": "Collect Items Spread to Conference Room", "difficulty": 3},
-{"name": "Read a Library Book Aloud", "difficulty": 3},
-{"name": "Buy a Special Key", "difficulty": 3},
 {"name": "End a Day with 90+ Steps Left", "difficulty": 3},
 {"name": "Open All Doors in Great Hall", "difficulty": 3},
 {"name": "Retrieve a Coin from Draining Water", "difficulty": 3},
@@ -39,16 +42,20 @@ var objectiveData = [
 {"name": "Collect a Flower Gem", "difficulty": 3},
 {"name": "Cash a Payroll Check", "difficulty": 3},
 {"name": "Make a Contraption", "difficulty": 3},
-{"name": "End with 35+ Rooms", "difficulty": 3},
 
 // ungrouped very hard
-{"name": "Add Mechanarium", "difficulty": 4},
 {"name": "Enter Antechamber", "difficulty": 4},
 {"name": "Gain Chess Power", "difficulty": 4},
 
 //grouped squares (only one of each group can appear)
 {"name": "End with 100+ Steps Taken", "difficulty": 1, "group": "steps"},
 {"name": "End with 120+ Steps Taken", "difficulty": 2, "group": "steps"},
+
+{"name": "End with 30+ Rooms", "difficulty": 3, "group": "totalrooms"},
+{"name": "End with 35+ Rooms", "difficulty": 3, "group": "totalrooms"},
+
+{"name": "Eat in Dining Room 2 times", "difficulty": 2, "group": "dining"},
+{"name": "Eat in Dining Room 3 times", "difficulty": 3, "group": "dining"},
 
 {"name": "Buy Out Any Shop", "difficulty": 2, "group": "buyout"},
 {"name": "Buy Out Kitchen", "difficulty": 2, "group": "buyout"},
@@ -66,8 +73,8 @@ var objectiveData = [
 {"name": "3+ Dice", "difficulty": 2, "group": "dice"},
 {"name": "4+ Dice", "difficulty": 3, "group": "dice"},
 
-{"name": "6+ Keys, Gems, Coins Each", "difficulty": 2, "group": "basics"},
-{"name": "8+ Keys, Gems, Coins Each", "difficulty": 3, "group": "basics"},
+{"name": "5+ Keys, Gems, Coins Each", "difficulty": 2, "group": "basics"},
+{"name": "7+ Keys, Gems, Coins Each", "difficulty": 3, "group": "basics"},
 
 {"name": "Eat Salted Food", "difficulty": 2, "group": "food"},
 {"name": "Gain >20 Steps in Dining Room", "difficulty": 2, "group": "food"},
@@ -96,16 +103,18 @@ var objectiveData = [
 
 {"name": "8+ Inventory Items", "difficulty": 2, "group": "inventory"},
 {"name": "10+ Inventory Items", "difficulty": 2, "group": "inventory"},
-{"name": "12+ Inventory Items", "difficulty": 3, "group": "inventory"},
 
 {"name": "Use 2 Upgrade Disks", "difficulty": 2, "group": "disks"},
-{"name": "Use 3 Upgrade Disks", "difficulty": 3, "group": "disks"},
+{"name": "Use 3 Upgrade Disks", "difficulty": 2, "group": "disks"},
 {"name": "Use 4 Upgrade Disks", "difficulty": 3, "group": "disks"},
 {"name": "Use 5 Upgrade Disks", "difficulty": 4, "group": "disks"},
 
 {"name": "2 Safes in a Day", "difficulty": 1, "group": "safes"},
 {"name": "3 Safes in a Day", "difficulty": 2, "group": "safes"},
 {"name": "4 Safes in a Day", "difficulty": 3, "group": "safes"},
+{"name": "3 Red Letters", "difficulty": 1, "group": "safes"},
+{"name": "4 Red Letters", "difficulty": 2, "group": "safes"},
+{"name": "5 Red Letters", "difficulty": 3, "group": "safes"},
 
 {"name": "Open 2 Trunks in a Day", "difficulty": 2, "group": "trunks"},
 {"name": "Open the Car Trunk", "difficulty": 2, "group": "trunks"},
@@ -126,19 +135,13 @@ var objectiveData = [
 {"name": "End with 10+ Dead Ends", "difficulty": 2, "group": "dead_ends"},
 {"name": "End with 12+ Dead Ends", "difficulty": 3, "group": "dead_ends"},
 
-{"name": "Draft 6 Red Rooms in a Day", "difficulty": 3, "group": "rooms"},
+{"name": "Draft 6 Red Rooms in a Day", "difficulty": 2, "group": "rooms"},
 {"name": "Draft 7 Bedrooms in a Day", "difficulty": 3, "group": "rooms"},
 {"name": "Draft 6 Green Rooms in a Day", "difficulty": 3, "group": "rooms"},
 {"name": "Draft 6 Hallways in a Day", "difficulty": 3, "group": "rooms"},
 
-{"name": "End in Rank 1 Pancake House", "difficulty": 1, "group": "pancake"},
-{"name": "End in Rank 2 Pancake House", "difficulty": 1, "group": "pancake"},
-{"name": "End in Rank 3 Pancake House", "difficulty": 2, "group": "pancake"},
-{"name": "End in Rank 4 Pancake House", "difficulty": 2, "group": "pancake"},
-{"name": "End in Rank 5 Pancake House", "difficulty": 3, "group": "pancake"},
-
 {"name": "1 Full Directory Category", "difficulty": 2, "group": "full_dir"},
-{"name": "Full Directory of Red Rooms", "difficulty": 3, "group": "full_dir"},
+{"name": "Full Directory of Red Rooms", "difficulty": 2, "group": "full_dir"},
 {"name": "Full Directory of Hallways", "difficulty": 3, "group": "full_dir"},
 {"name": "2 Full Directory Categories", "difficulty": 4, "group": "full_dir"},
 
