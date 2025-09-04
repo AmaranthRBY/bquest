@@ -51,7 +51,7 @@ var objectiveData = [
 {"name": "End with 100+ Steps Taken", "difficulty": 1, "group": "steps"},
 {"name": "End with 120+ Steps Taken", "difficulty": 2, "group": "steps"},
 
-{"name": "End with 30+ Rooms", "difficulty": 3, "group": "totalrooms"},
+{"name": "End with 30+ Rooms", "difficulty": 2, "group": "totalrooms"},
 {"name": "End with 35+ Rooms", "difficulty": 3, "group": "totalrooms"},
 
 {"name": "Eat in Dining Room 2 times", "difficulty": 2, "group": "dining"},
